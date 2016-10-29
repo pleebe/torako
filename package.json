@@ -1,0 +1,9 @@
+{
+  "name": "torako",
+  "private": true,
+  "dependencies": {
+    "async": "^2.0.0-rc.4",
+    "fs-extra": "^0.30.0",
+    "request": "^2.72.0"
+  }
+}

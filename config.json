@@ -1,0 +1,11 @@
+{
+    "boards": [
+        "sci"
+    ],
+    "endpoint": "https://boards.fireden.net",
+    "error": {
+        "retries": 5,
+        "wait": 500
+    },
+    "ratelimit": 1000
+}
