@@ -7,7 +7,7 @@ const async = require('async');
 const fs = require('fs-extra');
 
 async.eachSeries(config.boards, (board, boardCb) => {
-    let page = 4140;
+    let page = 1;
     let threads = [];
     async.doWhilst((pageCb) => api.page(board, page, (err, data) => pageCb(err, data)), (data) => {
         console.log('Downloaded page ' + page);
