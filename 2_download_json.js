@@ -11,7 +11,7 @@ async.eachSeries(config.boards, (board, boardCb) => {
         api.thread(board, thread, (err, data) => {
             console.log('Downloaded thread ' + thread);
             if (err === null)
-                fs.outputFile('data/' + board + '/' + (thread + '').match(/.{1,4}/g).join('/') + '/thread.json', JSON.stringify(data), (fileErr) => {
+                fs.outputFile('data/' + board + '/' + (thread + '').match(/.{1,4}/g).join('/') + '/' + thread + '.json', JSON.stringify(data), (fileErr) => {
                     console.log('Wrote thread ' + thread);
                     threadCb(fileErr);
                 });
