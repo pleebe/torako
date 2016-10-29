@@ -10,7 +10,7 @@ async.eachSeries(config.boards, (board, boardCb) => {
     let page = 1;
     let threads = [];
     async.doWhilst((pageCb) => api.page(board, page, (err, data) => pageCb(err, data)), (data) => {
-        console.log('Downloaded page ' + page);
+        console.log('Downloaded page ' + page + ' for /' + board + '/');
         if (typeof data.length === 'undefined') {
             threads = threads.concat(Object.getOwnPropertyNames(data).map((num) => { return num * 1; }));
             page++;
