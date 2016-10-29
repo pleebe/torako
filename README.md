@@ -1,4 +1,4 @@
-# torako
+# Torako 虎子
 
 [FoolFuuka](https://github.com/FoolCode/FoolFuuka) (and soon vanilla [Fuuka](https://github.com/eksopl/fuuka)) downloader - Archiving the archivers
 
