@@ -3,3 +3,4 @@ node_modules/
 .npm/
 data/
 config.json
+status.json
