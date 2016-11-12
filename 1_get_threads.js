@@ -23,10 +23,6 @@ fs.readJson('status.json', (statusReadErr, data) => {
         if (dirErr === null)
             async.eachSeries(boards, (board, boardCb) => {
                 let page = 1;
-                console.log(recovered);
-                console.log(board);
-                console.log(recovery.board);
-                console.log(board === recovery.board);
                 if (recovered && board === recovery.board)
                     page = recovery.page + 1;
                 let stream = fs.createWriteStream('data/' + board + '.json');
