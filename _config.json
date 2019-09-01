@@ -7,5 +7,12 @@
         "retries": 5,
         "wait": 500
     },
-    "ratelimit": 1000
+    "ratelimit": 1000,
+    "mysql": {
+        "host": "localhost",
+        "database": "database",
+        "username": "username",
+        "password": "password"
+    },
+    "file_destination": "/path/to/foolfuuka/public/foolfuuka/boards"
 }
